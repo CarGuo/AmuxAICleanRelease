@@ -10,7 +10,7 @@
 从磁盘占用到每个目录，从扫描结果到清理确认，让整理 Mac 更直观。
 
 <p>
-  <a href="https://github.com/CarGuo/AmuxAICleanRelease/releases/latest"><img src="https://img.shields.io/badge/Download-v1.6.3-1677FF?style=for-the-badge" alt="下载 AmuxAIClean 1.6.3" /></a>
+  <a href="https://github.com/CarGuo/AmuxAICleanRelease/releases/latest"><img src="https://img.shields.io/badge/Download-v1.6.8-1677FF?style=for-the-badge" alt="下载 AmuxAIClean 1.6.8" /></a>
 </p>
 
 <p>
@@ -93,20 +93,20 @@
 
 | 项目 | 当前版本 |
 | :--- | :--- |
-| 版本 | 1.6.3（207） |
+| 版本 | 1.6.8（228） |
 | 架构 | Apple Silicon / Intel 通用二进制 |
 | 签名 | Developer ID Application: SentenceEnd Inc |
 | 公证 | Apple Notary Accepted，已附加票据并通过 Gatekeeper 校验 |
 
-[下载 1.6.3 DMG](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.3/AmuxAIClean-1.6.3.dmg) · [下载 SHA256 校验文件](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.3/AmuxAIClean-1.6.3.dmg.sha256)
+[下载 1.6.8 DMG](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.8/AmuxAIClean-1.6.8.dmg) · [下载 SHA256 校验文件](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.8/AmuxAIClean-1.6.8.dmg.sha256)
 
 同时下载 DMG 和校验文件后，在下载目录运行：
 
 ```bash
-shasum -a 256 -c AmuxAIClean-1.6.3.dmg.sha256
+shasum -a 256 -c AmuxAIClean-1.6.8.dmg.sha256
 ```
 
-输出 `AmuxAIClean-1.6.3.dmg: OK` 表示文件与发布时的校验值一致。
+输出 `AmuxAIClean-1.6.8.dmg: OK` 表示文件与发布时的校验值一致。
 
 </details>
 
@@ -115,7 +115,7 @@ shasum -a 256 -c AmuxAIClean-1.6.3.dmg.sha256
 
 本地扫描与安全判定不依赖 AI。启用 AI 后，主动发送的上下文由你配置的服务处理。应用会检查 GitHub 版本更新；访问网络卷、云端占位文件或使用系统预览时，macOS 与存储提供方可能产生网络读取。
 
-请以本仓库的 [Releases 页面](https://github.com/CarGuo/AmuxAICleanRelease/releases) 为安装包发布入口。1.6.3 的应用内更新检查尚未迁移到本仓库，获取后续版本请查看此页面。
+请以本仓库的 [Releases 页面](https://github.com/CarGuo/AmuxAICleanRelease/releases) 为安装包发布入口。当前安装包的应用内更新检查尚未迁移到本仓库，获取后续版本请查看此页面。
 
 </details>
 
@@ -134,3 +134,5 @@ shasum -a 256 -c AmuxAIClean-1.6.3.dmg.sha256
 </div>
 
 <!-- v1.6.3: Existing logo and four user-provided screenshots are kept in img for reproducible README rendering. Distribution binaries remain Release assets. -->
+
+<!-- v1.6.8: Refresh version and download links for the notarized 228 build; preserve the existing in-app update source disclosure. -->
