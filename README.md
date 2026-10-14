@@ -10,7 +10,7 @@
 从磁盘占用到每个目录，从扫描结果到清理确认，让整理 Mac 更直观。
 
 <p>
-  <a href="https://github.com/CarGuo/AmuxAICleanRelease/releases/latest"><img src="https://img.shields.io/badge/Download-v1.6.9-1677FF?style=for-the-badge" alt="下载 AmuxAIClean 1.6.9" /></a>
+  <a href="https://github.com/CarGuo/AmuxAICleanRelease/releases/latest"><img src="https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease?label=Download&amp;color=1677FF&amp;style=for-the-badge" alt="下载 AmuxAIClean 最新版" /></a>
 </p>
 
 <p>
@@ -85,7 +85,9 @@
 
 支持 **macOS 13.5 及以上**，同一份安装包适用于 **Apple Silicon 与 Intel**。提供 **简体中文 / English**，支持浅色与深色外观。
 
-1. 从 [Releases](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 下载 DMG。
+升级兼容下限为 **1.6.2**；更早版本的配置、服务身份与撤销历史不提供自动迁移。
+
+1. 从 [Releases](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 的 Assets 下载 DMG。
 2. 打开 DMG，将 **AmuxAIClean** 拖入 **Applications**。
 3. 从 Applications 启动应用，选择需要扫描的范围。
 4. 如需访问受保护目录，可在“系统设置 → 隐私与安全 → 完全磁盘访问”中为 AmuxAIClean 授权。无法访问的内容会保留不完整提示。
@@ -95,20 +97,20 @@
 
 | 项目 | 当前版本 |
 | :--- | :--- |
-| 版本 | 1.6.9（229） |
+| 版本 | 1.6.12（236） |
 | 架构 | Apple Silicon / Intel 通用二进制 |
 | 签名 | Developer ID Application: SentenceEnd Inc |
 | 公证 | Apple Notary Accepted，已附加票据并通过 Gatekeeper 校验 |
 
-[下载 1.6.9 DMG](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.9/AmuxAIClean-1.6.9.dmg) · [下载 SHA256 校验文件](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.9/AmuxAIClean-1.6.9.dmg.sha256)
+[下载 1.6.12 DMG](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.12/AmuxAIClean-1.6.12.dmg) · [下载 SHA256 校验文件](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.12/AmuxAIClean-1.6.12.dmg.sha256)
 
 同时下载 DMG 和校验文件后，在下载目录运行：
 
 ```bash
-shasum -a 256 -c AmuxAIClean-1.6.9.dmg.sha256
+shasum -a 256 -c AmuxAIClean-1.6.12.dmg.sha256
 ```
 
-输出 `AmuxAIClean-1.6.9.dmg: OK` 表示文件与发布时的校验值一致。
+输出 `AmuxAIClean-1.6.12.dmg: OK` 表示文件与发布时的校验值一致。
 
 </details>
 
@@ -117,7 +119,7 @@ shasum -a 256 -c AmuxAIClean-1.6.9.dmg.sha256
 
 本地扫描与安全判定不依赖 AI。启用 AI 后，主动发送的上下文由你配置的服务处理。应用会检查 GitHub 版本更新；访问网络卷、云端占位文件或使用系统预览时，macOS 与存储提供方可能产生网络读取。
 
-请以本仓库的 [Releases 页面](https://github.com/CarGuo/AmuxAICleanRelease/releases) 为安装包发布入口。当前安装包的应用内更新检查尚未迁移到本仓库，获取后续版本请查看此页面。
+本仓库的 [Releases 页面](https://github.com/CarGuo/AmuxAICleanRelease/releases) 是官方安装包发布入口，[最新版下载](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 会指向当前正式版本。1.6.12 的应用内更新检查与下载入口也已指向此公开发行仓库；旧版本若无法发现更新，请从这里手动下载。
 
 </details>
 
@@ -138,3 +140,5 @@ shasum -a 256 -c AmuxAIClean-1.6.9.dmg.sha256
 <!-- v1.6.3: Existing logo and four user-provided screenshots are kept in img for reproducible README rendering. Distribution binaries remain Release assets. -->
 
 <!-- v1.6.9: Independently acknowledge Normal and Professional first visits; update the notarized 229 download while preserving the in-app update source disclosure. -->
+
+<!-- v1.6.12 / 2026.10.14: Publish notarized build 236, make the badge follow latest, and align the in-app update/download disclosure with the public distribution repository. -->
