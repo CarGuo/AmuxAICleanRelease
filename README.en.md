@@ -10,27 +10,33 @@ Understand directory usage, review candidates, then decide what to clean.
 
 English · [简体中文](README.md)
 
-[![Release](https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease)](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest)
-[![macOS 13.5+](https://img.shields.io/badge/macOS-13.5%2B-1677FF)](docs/INSTALL.md)
-[![Universal](https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D)](docs/INSTALL.md)
-[![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease)](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) [![macOS 13.5+](https://img.shields.io/badge/macOS-13.5%2B-1677FF)](docs/INSTALL.md) [![Universal](https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D)](docs/INSTALL.md) [![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-[Download Latest](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) ·
-[User Guide](docs/USER_GUIDE.en.md) · [Installation](docs/INSTALL.md) ·
-[Releases](https://github.com/CarGuo/AmuxAICleanRelease/releases) · [Documentation](docs/README.md)
+[Download Latest](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) · [User Guide](docs/USER_GUIDE.en.md) · [Installation](docs/INSTALL.md) · [Releases](https://github.com/CarGuo/AmuxAICleanRelease/releases) · [Documentation](docs/README.md)
 
 </div>
 
-<div align="center">
-<p><sub>Development supported by</sub></p>
+## Sponsor
+
+<!-- v2026.10.14：按用户要求使用显著的赞助卡，Logo 与正文介绍并列展示。 -->
+<table>
+<tr>
+<td width="280" align="center" valign="middle">
 <a href="https://amux.ai/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/amux-logo-dark.svg" />
-    <img src="img/amux-logo.svg" width="180" alt="Amux" />
-  </picture>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="img/amux-logo-dark.svg" />
+<img src="img/amux-logo.svg" width="240" alt="Amux" />
+</picture>
 </a>
-<p><sub>Development tokens and the Apple Developer account are sponsored by Amux.<br/>This support also gave AmuxAIClean its name.</sub></p>
-</div>
+</td>
+<td valign="middle">
+<h3>Amux · One API for major AI models</h3>
+<p>Amux gives developers and AI applications a unified API for major models. Compare models and providers, choose metered or subscription billing, and use automatic provider failover.</p>
+<p>Amux sponsors this project with <strong>development tokens and the Apple Developer account</strong>, supporting development, testing and notarized distribution. The name <strong>AmuxAIClean</strong> also comes from this sponsorship.</p>
+<p><a href="https://amux.ai/">Visit Amux to explore models and API services →</a></p>
+</td>
+</tr>
+</table>
 
 <!-- v2026.10.14: replace the v1.0–v1.5 introduction and images with the v1.6.12 product structure.
 Current production views and isolated examples back these images; see img/screenshots/README.md. -->

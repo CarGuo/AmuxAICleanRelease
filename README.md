@@ -10,28 +10,33 @@
 
 [English](README.en.md) · 简体中文
 
-[![Release](https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease)](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest)
-[![macOS 13.5+](https://img.shields.io/badge/macOS-13.5%2B-1677FF)](docs/INSTALL.md)
-[![Universal](https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D)](docs/INSTALL.md)
-[![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease)](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) [![macOS 13.5+](https://img.shields.io/badge/macOS-13.5%2B-1677FF)](docs/INSTALL.md) [![Universal](https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D)](docs/INSTALL.md) [![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-[下载最新版](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) ·
-[使用指南](docs/USER_GUIDE.md) · [安装说明](docs/INSTALL.md) ·
-[版本记录](https://github.com/CarGuo/AmuxAICleanRelease/releases) ·
-[文档目录](docs/README.md)
+[下载最新版](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) · [使用指南](docs/USER_GUIDE.md) · [安装说明](docs/INSTALL.md) · [版本记录](https://github.com/CarGuo/AmuxAICleanRelease/releases) · [文档目录](docs/README.md)
 
 </div>
 
-<div align="center">
-<p><sub>开发支持</sub></p>
+## 赞助商
+
+<!-- v2026.10.14：按用户要求使用显著的赞助卡，Logo 与正文介绍并列展示。 -->
+<table>
+<tr>
+<td width="280" align="center" valign="middle">
 <a href="https://amux.ai/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/amux-logo-dark.svg" />
-    <img src="img/amux-logo.svg" width="180" alt="Amux" />
-  </picture>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="img/amux-logo-dark.svg" />
+<img src="img/amux-logo.svg" width="240" alt="Amux" />
+</picture>
 </a>
-<p><sub>感谢 Amux 提供开发 Token 与 Apple 开发者账号支持。<br/>AmuxAIClean 的命名也源于这份赞助。</sub></p>
-</div>
+</td>
+<td valign="middle">
+<h3>Amux · 多模型 API 平台</h3>
+<p>Amux 为开发者和 AI 应用提供统一的模型 API 接入，可比较模型与供应商，并按需要选择按量或订阅计费。平台提供自动供应商故障切换，帮助接入多种主流模型。</p>
+<p>感谢 Amux 为本项目提供<strong>开发 Token 与 Apple 开发者账号</strong>，支持 AmuxAIClean 的开发、测试和公证分发。项目名称 <strong>AmuxAIClean</strong> 也源于这份赞助。</p>
+<p><a href="https://amux.ai/">访问 Amux，了解模型与 API 服务 →</a></p>
+</td>
+</tr>
+</table>
 
 <!-- v2026.10.14：旧首页和截图停留在 v1.0–v1.5；按 v1.6.12 产品结构更新。
 截图复用当前生产视图与隔离示例，来源见 img/screenshots/README.md。 -->
