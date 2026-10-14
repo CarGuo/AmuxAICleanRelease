@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "kind": "offscreen-production-views-with-examples",
+  "generatedAtUTC": "2026-10-14T08:18:49.128573+00:00",
+  "checkoutHead": "38caaff0c4665582be248e05cdafa6d249f16f92",
+  "generator": "Packages/AppUI/Tests/AppUITests/DocumentationScreenshotTests.swift",
+  "generatorSHA256": "3c500ea4bad33548dbbf5d3182103706a1b75bba37b2fcb7af1a2eba801ab5f6",
+  "appLaunched": false,
+  "realHomeScanned": false,
+  "filesRecycled": false,
+  "aiRequested": false,
+  "statusData": "read-only capture-machine measurements",
+  "images": [
+    {
+      "file": "01-analyze-zh-Hans.jpg",
+      "bytes": 348451,
+      "sha256": "914e8984856b7155b9243dbd3a11e85046edb538ce8f38f67eb33f51265dfca1"
+    },
+    {
+      "file": "01-analyze-en.jpg",
+      "bytes": 353776,
+      "sha256": "423d136c9ceeb25ea4f8bb81abb6979ee4d076ce8258547b651bb8f9df7d80d7"
+    },
+    {
+      "file": "02-clean-zh-Hans.jpg",
+      "bytes": 428761,
+      "sha256": "a08cf93f6b3955d501ea9bbf360c0f807e4eaeda618d7cd69cbf69a4b63989f4"
+    },
+    {
+      "file": "02-clean-en.jpg",
+      "bytes": 439536,
+      "sha256": "5380bedd66cd026582b63b66c3fab0847fe2bcc76b0f6cc0aa1ac20c5f071c70"
+    },
+    {
+      "file": "03-status-zh-Hans.jpg",
+      "bytes": 274736,
+      "sha256": "1ae20ca05068710203e86351c1472bf2095ae5b9df0f3a30c393cf46b6e62044"
+    },
+    {
+      "file": "03-status-en.jpg",
+      "bytes": 283705,
+      "sha256": "ee2b3c982233ff450140a813c7d0732b63a008abda02d1a7a17f41a32c944f31"
+    },
+    {
+      "file": "04-tree-zh-Hans.jpg",
+      "bytes": 110142,
+      "sha256": "61a3f2a8f4d5680659dd1ec018fc1e7c6433a32908aa0ade4affd82bc9caa5d4"
+    },
+    {
+      "file": "04-tree-en.jpg",
+      "bytes": 109947,
+      "sha256": "ef47d26a61e08ae7caf347ce849daaa81f00da94a45445b593fa795210a44fe0"
+    },
+    {
+      "file": "05-large-files-zh-Hans.jpg",
+      "bytes": 159659,
+      "sha256": "89f53a1f71d7b541fedd3eb0adfdb1b9c22a23806c0a12fb490736f6472a58e0"
+    },
+    {
+      "file": "05-large-files-en.jpg",
+      "bytes": 163451,
+      "sha256": "1b5cc1b12fbc2b5a66f6092108e03565b6b616c74284c003967e70a8585b59bd"
+    },
+    {
+      "file": "06-row-actions-zh-Hans.jpg",
+      "bytes": 69170,
+      "sha256": "1ce12eb826efaf5d2e8eeb82e06a964dd1f8062102b5b86b4d669d939978c5aa"
+    },
+    {
+      "file": "06-row-actions-en.jpg",
+      "bytes": 86764,
+      "sha256": "413f152579365ddb924f63b597010059b3ee23dea88bc6c7e654a7b571bd0c12"
+    }
+  ]
+}

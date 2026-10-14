@@ -1,144 +1,133 @@
 <div align="center">
 
-<img src="img/logo.png" width="112" height="112" alt="AmuxAIClean Logo" />
+<img src="img/logo.png" width="112" alt="AmuxAIClean" />
 
 # AmuxAIClean
 
-### 看清空间，轻装前行。
+**原生 macOS 空间分析与清理工具。**
 
-原生 macOS 空间分析与清理工具。<br/>
-从磁盘占用到每个目录，从扫描结果到清理确认，让整理 Mac 更直观。
+看清目录占用，审阅清理候选，再决定如何整理。
 
-<p>
-  <a href="https://github.com/CarGuo/AmuxAICleanRelease/releases/latest"><img src="https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease?label=Download&amp;color=1677FF&amp;style=for-the-badge" alt="下载 AmuxAIClean 最新版" /></a>
-</p>
+[English](README.en.md) · 简体中文
 
-<p>
-  <img src="https://img.shields.io/badge/macOS-13.5%2B-1677FF?style=flat-square" alt="macOS 13.5 及以上" />
-  <img src="https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D?style=flat-square" alt="Apple Silicon 与 Intel 通用安装包" />
-  <img src="https://img.shields.io/badge/Apple_Notary-Accepted-278C58?style=flat-square" alt="已通过 Apple 公证" />
-</p>
+[![Release](https://img.shields.io/github/v/release/CarGuo/AmuxAICleanRelease)](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest)
+[![macOS 13.5+](https://img.shields.io/badge/macOS-13.5%2B-1677FF)](docs/INSTALL.md)
+[![Universal](https://img.shields.io/badge/Apple_Silicon_%2F_Intel-Universal-00A99D)](docs/INSTALL.md)
+[![MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-[下载最新版](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) · [功能介绍](#功能介绍) · [安装说明](#安装说明) · [版本记录](https://github.com/CarGuo/AmuxAICleanRelease/releases) · [反馈问题](https://github.com/CarGuo/AmuxAICleanRelease/issues)
+[下载最新版](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) ·
+[使用指南](docs/USER_GUIDE.md) · [安装说明](docs/INSTALL.md) ·
+[版本记录](https://github.com/CarGuo/AmuxAICleanRelease/releases) ·
+[文档目录](docs/README.md)
 
 </div>
-
-<br/>
 
 <div align="center">
-  <img src="img/screenshot-analyze.png" width="1040" alt="普通模式：磁盘占用矩形图、目录明细与较小项目入口" />
-  <p><sub>普通模式 · 空间分析，从磁盘概览到每一个文件夹。</sub></p>
+<p><sub>开发支持</sub></p>
+<a href="https://amux.ai/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="img/amux-logo-dark.svg" />
+    <img src="img/amux-logo.svg" width="180" alt="Amux" />
+  </picture>
+</a>
+<p><sub>感谢 Amux 提供开发 Token 与 Apple 开发者账号支持。<br/>AmuxAIClean 的命名也源于这份赞助。</sub></p>
 </div>
 
-## 功能介绍
+<!-- v2026.10.14：旧首页和截图停留在 v1.0–v1.5；按 v1.6.12 产品结构更新。
+截图复用当前生产视图与隔离示例，来源见 img/screenshots/README.md。 -->
 
-### 从空间占用，找到整理方向
+## 普通模式：分析、清理、优化、状态
 
-用矩形面积比较目录占用，点击文件夹逐层查看。名称搜索、目录列表与分页帮助你定位内容；较小项目会合并为可读区域，打开明细后仍可查看全部成员。
+新窗口默认进入普通模式。四个栏目把空间定位、候选审阅和系统信息放在同一个工作台。
 
-普通模式提供四个栏目，将常用操作放在一起：
+<img src="img/screenshots/01-analyze-zh-Hans.jpg" width="1100" alt="普通工作台的分析页：范围选择、矩形空间图、目录明细与状态栏" />
 
-| 栏目 | 可以做什么 |
-| :--- | :--- |
-| **分析** | 选择扫描范围，查看磁盘占用图、目录明细与大体积内容。 |
-| **清理** | 一键发起扫描，检查系统与日志、应用缓存及可选的开发缓存，审阅后确认处理。 |
-| **优化** | 查看用户空间维护任务与传统启动代理，按需要执行。 |
-| **状态** | 集中查看 CPU、内存、磁盘、电池、网络速率，以及运行时间和散热状态。 |
+| 栏目 | 使用方式 |
+|---|---|
+| **分析** | 选择磁盘或文件夹，扫描后用矩形空间图比较占用，逐层进入目录，搜索和查看明细。 |
+| **清理** | 扫描系统与日志、应用缓存，以及主动选入的开发缓存；先审阅候选，再确认移到废纸篓。 |
+| **优化** | 查看支持的用户态维护任务与传统启动代理；每个工具按其说明操作。 |
+| **状态** | 查看 CPU、内存、磁盘、电池、网络速率、运行时间与散热状态。 |
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>扫描清理</h3>
-      <p>按需要选择扫描范围，先看清候选，再决定整理哪些内容。</p>
-      <a href="img/screenshot-clean.png"><img src="img/screenshot-clean.png" alt="普通模式：扫描范围选择与一键扫描入口" /></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>实时状态</h3>
-      <p>系统读数与近期变化集中呈现，随时了解 Mac 的运行状态。</p>
-      <a href="img/screenshot-status.png"><img src="img/screenshot-status.png" alt="系统状态：CPU、内存、磁盘、电池、网络与运行时间" /></a>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top"><img src="img/screenshots/02-clean-zh-Hans.jpg" alt="普通清理页：候选分类、建议与需要确认的项目" /><br/><sub>清理：扫描范围、分类结果与审阅入口。</sub></td>
+<td width="50%" valign="top"><img src="img/screenshots/03-status-zh-Hans.jpg" alt="普通状态页：系统指标与近期读数" /><br/><sub>状态：集中查看系统读数。</sub></td>
+</tr>
 </table>
 
-### 专业模式，提供更细的控制
+## 专业模式：目录、文件与开发环境
 
-- **大文件与重复文件**：定位占用较大的文件，检查重复内容，辅助整理长期积累的数据。
-- **开发者空间管理**：检查 Xcode、Android、Flutter、Node.js 等开发环境的构建产物、依赖缓存及旧版本资源。
-- **应用与残留管理**：检查已安装应用及关联残留，按安全规则审阅处理。应用卸载位于专业模式。
-- **开发者工具与工作流**：提供更细的扫描分类、文件列表、Homebrew 与开发环境管理入口。
-- **可选 AI 辅助**：辅助理解扫描结果和清理建议，默认关闭，需要自行配置服务并主动使用。
+窗口顶部可切换专业模式。侧栏提供推荐扫描、开发者构建产物、整盘扫描、常见软件缓存、
+自定义路径和工具入口。
 
-普通模式和专业模式分别在首次进入时展示逐控件引导。专业侧栏按功能块介绍；尚未扫描时也会介绍 AI、加入待处理和删除三个条目按钮。可随时通过窗口中的指南按钮或 Help 菜单重放。
+- **树形与清单**：逐层浏览容量和文件数，查看权限与扫描完整性；清单支持批量选择。
+- **大文件**：默认筛选至少 100 MB 的文件并展示 Top 200，支持大小、修改时间排序、类型筛选和 Quick Look；阈值可在设置中调整。
+- **应用与重复文件**：查看应用占用、卸载关联残留；重复文件按内容分组，选定保留副本后审阅其它副本。
+- **开发者工具**：查找 Xcode、Android、Flutter、Node.js、Rust、Go、Python 等环境的构建产物与缓存，另有 Homebrew、端口清理和按生态组织的工作流。
+- **稍后处理与最近清理**：把候选加入待处理集合，统一审阅；从最近清理记录尝试恢复匹配的废纸篓项目。
 
-<div align="center">
-  <img src="img/screenshot-professional.png" width="1040" alt="专业模式：分类扫描、树形明细与权限受限提示" />
-  <p><sub>专业模式 · 分类扫描与树形明细，权限受限会明确标记。</sub></p>
-</div>
+<img src="img/screenshots/04-tree-zh-Hans.jpg" width="1100" alt="专业模式树形结果区：目录占用、文件数量、修改日期和行操作" />
 
-### 先审阅，再清理
+<sub>树形结果区：按目录比较占用。</sub>
 
-扫描结果表示已测得的占用，不等于全部可清理容量。权限受限或未完成测量的内容会明确标识。
+<img src="img/screenshots/05-large-files-zh-Hans.jpg" width="1100" alt="专业模式大文件结果区：文件类型筛选与大小列表" />
 
-文件清理先展示候选与确认信息，再通过废纸篓处理；关键路径与敏感数据受安全规则保护。最近清理记录可用于尝试恢复，前提是废纸篓中的项目仍存在且身份未变化。
+<sub>大文件结果区：定位体积较大的文件。</sub>
 
-## 安装说明
+**操作列**中的 ✨ 是 AI 辅助，托盘图标是“稍后处理”，废纸篓图标是回收入口。
+点击操作列表头的问号可查看当前界面提供的示例说明；窗口右上角问号可重新打开控件引导。
 
-支持 **macOS 13.5 及以上**，同一份安装包适用于 **Apple Silicon 与 Intel**。提供 **简体中文 / English**，支持浅色与深色外观。
+<img src="img/screenshots/06-row-actions-zh-Hans.jpg" width="640" alt="操作列示例说明：AI 辅助、稍后处理和移到废纸篓" />
 
-升级兼容下限为 **1.6.2**；更早版本的配置、服务身份与撤销历史不提供自动迁移。
+> 图片更新于 2026-10-14，来自 v1.6.12 对应生产视图的离屏渲染。文件、候选容量为隔离示例；
+> 状态页为采集时本机只读读数。图片展示工作台或工具内页，不代表真实用户扫描结果、性能基准或运行交互验收。
+> [素材来源与复现方式](img/screenshots/README.md)。
 
-1. 从 [Releases](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 的 Assets 下载 DMG。
-2. 打开 DMG，将 **AmuxAIClean** 拖入 **Applications**。
-3. 从 Applications 启动应用，选择需要扫描的范围。
-4. 如需访问受保护目录，可在“系统设置 → 隐私与安全 → 完全磁盘访问”中为 AmuxAIClean 授权。无法访问的内容会保留不完整提示。
+## 确认与恢复
 
-<details>
-<summary><strong>版本、签名与文件校验</strong></summary>
+扫描得到的占用不等于可清理容量。受限、未完成或未知的范围会保留提示。
 
-| 项目 | 当前版本 |
-| :--- | :--- |
-| 版本 | 1.6.12（236） |
-| 架构 | Apple Silicon / Intel 通用二进制 |
-| 签名 | Developer ID Application: SentenceEnd Inc |
-| 公证 | Apple Notary Accepted，已附加票据并通过 Gatekeeper 校验 |
+普通模式提供详细审阅；专业模式对普通项目使用简洁确认，对允许覆盖的风险直接进入严格确认，
+需要输入 `DELETE`。系统保护边界、越界路径及实际系统权限不能通过严格确认解除。
+完整成功使用短暂提示，失败、部分成功和未提交请求使用弹窗说明原因。
 
-[下载 1.6.12 DMG](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.12/AmuxAIClean-1.6.12.dmg) · [下载 SHA256 校验文件](https://github.com/CarGuo/AmuxAICleanRelease/releases/download/v1.6.12/AmuxAIClean-1.6.12.dmg.sha256)
+文件清理通过系统废纸篓完成。最近清理记录仅在对应废纸篓对象仍存在且身份可验证时提供恢复；
+清空废纸篓后不保证恢复。Apple 工作流中的 Simulator Device / Runtime 属于明确标识的系统托管卸载，
+不能从废纸篓恢复。操作细节见 [使用指南](docs/USER_GUIDE.md)。
 
-同时下载 DMG 和校验文件后，在下载目录运行：
+## 安装与更新
 
-```bash
-shasum -a 256 -c AmuxAIClean-1.6.12.dmg.sha256
-```
+正式 DMG 支持 **macOS 13.5+、Apple Silicon / Intel**，提供 **简体中文 / English** 与浅色、深色外观。
 
-输出 `AmuxAIClean-1.6.12.dmg: OK` 表示文件与发布时的校验值一致。
+1. 从 [官方最新 Release](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 下载 DMG 和同版本 SHA256 文件。
+2. 校验后打开 DMG，把 AmuxAIClean 拖入 Applications，再启动应用。
+3. 按需要授予完全磁盘访问；受限范围仍会显示不完整提示。升级或重新授权后按系统提示重启并重新扫描。
 
-</details>
+当前升级兼容下限为 **1.6.2**，不自动迁移 1.5.9、1.6.0、1.6.1 的旧配置、服务身份或撤销历史。
+应用内更新检查指向公开发行仓库 [CarGuo/AmuxAICleanRelease](https://github.com/CarGuo/AmuxAICleanRelease)。
+本仓库提供产品介绍、使用指南、截图与发行附件；源码和维护者开发文档单独管理。
 
-<details>
-<summary><strong>联网与版本更新说明</strong></summary>
+[完整安装指南](docs/INSTALL.md) · [维护者发布流程](docs/PUBLISHING.md)
 
-本地扫描与安全判定不依赖 AI。启用 AI 后，主动发送的上下文由你配置的服务处理。应用会检查 GitHub 版本更新；访问网络卷、云端占位文件或使用系统预览时，macOS 与存储提供方可能产生网络读取。
+## 隐私与质量
 
-本仓库的 [Releases 页面](https://github.com/CarGuo/AmuxAICleanRelease/releases) 是官方安装包发布入口，[最新版下载](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) 会指向当前正式版本。1.6.12 的应用内更新检查与下载入口也已指向此公开发行仓库；旧版本若无法发现更新，请从这里手动下载。
+本地安全判定不依赖 AI。AI 默认关闭，自行配置服务并主动请求后才发送上下文；
+更新检查首次安装默认开启，可在设置中关闭。网络卷、云端占位文件和 Quick Look 的系统读取边界见
+[隐私政策](PRIVACY.md)。可选 Sentinel 默认关闭，启用后运行当前用户的非特权本地 Agent。
 
-</details>
+九个 Swift 包覆盖扫描、安全、删除授权、历史存储及支撑能力。包测试、构建、真实交互和最终安装包
+验证分别记录，不把离屏图片当成功能验收。当前范围见 [产品状态](docs/CURRENT_STATE.md)，
+确认与恢复见 [使用指南](docs/USER_GUIDE.md#4-删除确认失败与恢复)，安全边界见 [SECURITY.md](SECURITY.md)。
 
-<br/>
+## 文档与反馈
 
----
+[使用指南](docs/USER_GUIDE.md) · [安装与权限](docs/INSTALL.md) ·
+[公开发布与校验](docs/PUBLISHING.md) · [文档目录](docs/README.md) ·
+[反馈问题](https://github.com/CarGuo/AmuxAICleanRelease/issues)
 
-<div align="center">
+反馈时附应用与 macOS 版本、使用模式、入口和复现步骤；先移除图片或日志中的私人路径。
 
-**AmuxAIClean · 让空间整理更清楚**
+## License
 
-[下载应用](https://github.com/CarGuo/AmuxAICleanRelease/releases/latest) · [查看版本记录](https://github.com/CarGuo/AmuxAICleanRelease/releases) · [反馈问题](https://github.com/CarGuo/AmuxAICleanRelease/issues)
-
-<sub>本仓库提供产品介绍、截图与发行包。反馈问题时，请附上应用版本、macOS 版本和复现步骤，并移除截图或日志中的私人路径与敏感信息。</sub>
-
-</div>
-
-<!-- v1.6.3: Existing logo and four user-provided screenshots are kept in img for reproducible README rendering. Distribution binaries remain Release assets. -->
-
-<!-- v1.6.9: Independently acknowledge Normal and Professional first visits; update the notarized 229 download while preserving the in-app update source disclosure. -->
-
-<!-- v1.6.12 / 2026.10.14: Publish notarized build 236, make the badge follow latest, and align the in-app update/download disclosure with the public distribution repository. -->
+[MIT](LICENSE) · Copyright © 2026 CarGuo
